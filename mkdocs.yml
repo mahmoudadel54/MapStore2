@@ -196,7 +196,7 @@ plugins:
       #    - 'release-notes/:upgrading'
       #    - 'release-notes/:changelog'
       #
-      exclude_pages:
+      # exclude_pages:
       #    - 'user-guide/'
       #    - 'appendix/contribute/'
       #convert_iframe:
@@ -212,6 +212,6 @@ plugins:
       output_path: pdf/mapstore_documentation.pdf
       enabled_if_env: ENABLE_PDF_EXPORT
       #
-      #debug_html: true
+      debug_html: true
       show_anchors: true
-      #verbose: true
+      verbose: true
