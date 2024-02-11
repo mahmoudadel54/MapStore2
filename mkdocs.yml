@@ -29,6 +29,7 @@ theme:
     primary: 'teal'
     accent: 'teal'
 extra:
+  pdf_link: pdf/mapstore_documentation.pdf
   repo_icon: 'github'
   social:
     - type: 'github'
@@ -63,6 +64,8 @@ nav:
   - Home:
     - Home: 'index.md' # To include in pdf
     - Quick Start: 'quick-start.md'
+    - PDF: pdf/mapstore_documentation.pdf
+
   - User Guide:
     - Home Page Overview: 'user-guide/home-page.md'
     - Managing Users and Groups:
