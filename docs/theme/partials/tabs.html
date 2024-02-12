@@ -30,6 +30,11 @@
   data-md-component="tabs"
 >
   <div class="md-grid">
+    {% if config.extra.pdf_link %}
+      This content is visible when my_variable is set to true.
+      {% else %}
+      This content is visible when my_variable is not set or set to false.
+    {% endif %}
     <div style="display: flex; justify-content: space-between">
     <ul class="md-tabs__list">
       {% for nav_item in nav %}
