@@ -29,7 +29,6 @@ theme:
     primary: 'teal'
     accent: 'teal'
 extra:
-  pdf_link: pdf/mapstore_documentation.pdf
   repo_icon: 'github'
   social:
     - type: 'github'
@@ -64,7 +63,6 @@ nav:
   - Home:
     - Home: 'index.md' # To include in pdf
     - Quick Start: 'quick-start.md'
-
   - User Guide:
     - Home Page Overview: 'user-guide/home-page.md'
     - Managing Users and Groups:
@@ -178,45 +176,20 @@ nav:
     - Communicating with MapStore:
       - API usage: 'developer-guide/API-usage.md'
       - MapViewer query paramaters: 'developer-guide/map-query-parameters.md'
-  - Download PDF: pdf/mapstore_documentation.pdf
-
 plugins:
   - search
   - with-pdf:
       author: GeoSolutionsGroup
-      copyright: GeoSolutionsGroup
+      copyright: 'MapStore©'
       #
       #cover: false
       #back_cover: true
       cover_logo: 'img/mapstore2-logo.png'
       cover_title: MapStore Documentation
       cover_subtitle: User Guide and Developer Guide
-      #custom_template_path: TEMPLATES PATH
-      #
-      #toc_title: TOC TITLE TEXT
-      #heading_shift: false
       toc_level: 3
-      #ordered_chapter_level: 2
-      #excludes_children:
-      #    - 'release-notes/:upgrading'
-      #    - 'release-notes/:changelog'
-      #
-      # exclude_pages:
-      #    - 'user-guide/'
-      #    - 'appendix/contribute/'
-      #convert_iframe:
-      #    - src: IFRAME SRC
-      #      img: POSTER IMAGE URL
-      #      text: ALTERNATE TEXT
-      #    - src: ...
-      #two_columns_level: 3
-      #
-      # render_js: true
-      #headless_chrome_path: headless-chromium
-      #
       output_path: pdf/mapstore_documentation.pdf
       enabled_if_env: ENABLE_PDF_EXPORT
-      #
-      debug_html: false
+      debug_html: true
       show_anchors: true
-      verbose: false
+      verbose: true
