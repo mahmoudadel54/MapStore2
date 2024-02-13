@@ -69,7 +69,7 @@ def inject_link(html: str, href: str,
         a = soup.new_tag('a', href=href, title='PDF', target="_blank",
                          **{'class': 'md-tabs__link'})
         # Append an img tag with a local image source
-        img_src = "/docs/user-guide/img/button/download-pdf-icon.png"
+        img_src = "../img/button/download-pdf-icon.png"
         a.append(_img_tag(img_src))
         a.append("Export PDF")
         export_pdf.append(a)
