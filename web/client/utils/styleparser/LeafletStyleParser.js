@@ -90,8 +90,9 @@ function getStyleFuncFromRules({ rules: geoStylerStyleRules = [] }) {
     return ({
         opacity: globalOpacity = 1,
         layer = {},
-        features
-    } = {}) => drawIcons({ rules: geoStylerStyleRules }, { features }).then((images = []) =>  {
+        features,
+        loadFontAwesomeForIcons
+    } = {}) => drawIcons({ rules: geoStylerStyleRules, loadFontAwesomeForIcons }, { features }).then((images = []) =>  {
 
         if (layer._msAdditionalLayers) {
             layer._msAdditionalLayers.forEach((additionalLayer) => {
